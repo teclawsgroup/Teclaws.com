@@ -3,6 +3,7 @@ export const NAV_LINKS = [
   { label: "About",      href: "/about" },
   { label: "Services",   href: "/services" },
   { label: "AI",         href: "/ai" },
+  { label: "Products",   href: "/products" },
   { label: "Industries", href: "/industries" },
   { label: "Process",    href: "/process" },
   { label: "Contact",    href: "/contact" },
@@ -12,6 +13,7 @@ export const CONTACT = {
   email:    "teclawsgroup@gmail.com",
   phone:    "+254 141 414 255",
   whatsapp: "https://wa.me/254141414255",
+  facebook: "https://www.facebook.com/people/Teclaws/61574743811709/",
   linkedin: "https://www.linkedin.com/company/teclaws",
   instagram: "https://www.instagram.com/teclawsgroup/",
   calendly: "https://calendly.com/teclawsgroup",
@@ -75,6 +77,23 @@ export const INDUSTRIES: Industry[] = [
   { name: "Retail",      description: "E-commerce, inventory management, and omnichannel retail solutions." },
   { name: "Logistics",   description: "Fleet tracking, route optimization, and supply chain management." },
   { name: "SMEs",        description: "Scalable business software tailored for growing small and medium enterprises." },
+];
+
+export interface Product {
+  name: string;
+  tagline: string;
+  description: string;
+  url: string;
+}
+
+export const PRODUCTS: Product[] = [
+  {
+    name: "Neer",
+    tagline: "The Complete POS & ERP for All Businesses",
+    description:
+      "Stop juggling disjointed systems. Seamlessly manage sales, multi-shop inventory, automated KRA eTIMS receipting, M-Pesa integrations, and staff shifts from one powerful dashboard.",
+    url: "https://neer.co.ke/",
+  },
 ];
 
 export interface ProcessStep {
